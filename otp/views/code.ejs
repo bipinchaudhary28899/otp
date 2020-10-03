@@ -1,0 +1,47 @@
+<html>
+    <head>  
+        <style>
+            .btn{
+                width: 100px;
+                
+                background-color: transparent;
+                
+            }
+            input[type="number"]{
+               height: 50px;
+                width: 30vw;
+               
+            }
+            .rel{
+                 position: relative;
+            }
+            .container{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                padding: 10vh 0 0 0 ;
+                background-color: bisque;
+            }
+            form{
+                background-color: white;
+                height: 30vh;
+            }
+          
+            
+        </style>
+
+
+    </head>
+    <body>
+        <div class="container">
+        <form method="POST" action="/verify">
+            <input  type="hidden" name="mobile" value=<%=locals.mobileNumber%>>
+            <h3>An OTP is sent to <%=locals.mobileNumber%> </h3>
+                        <input type="number" required placeholder="Enter the OTP sent on your mobile" name="OTP">
+               
+        <br><br><br>
+            <button type="submit" style="height: 30px; width: 50pxs;" class="btn"> Verify</button>
+        </form>
+            </div>
+    </body>

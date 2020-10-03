@@ -1,0 +1,115 @@
+<html>
+    <head>  
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+        
+        <style>
+           #register{
+                display: flex;
+                flex-direction: column;
+              background-color: white;
+                width: 40vw;
+               padding: 0 0 0 60px;
+               height: 70vh;
+              }
+           .container-fluid{
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               padding: 10vh 0 0 0;
+               height: 100vh;
+               background-color: bisque; 
+               
+           }
+            .abc{
+                margin-bottom: -10px;
+                margin-left: 20px;
+                z-index: 2;
+                background-color: white;
+                
+            }
+            input{
+                margin: 0 0 15px 0;
+                width: 30vw;
+                padding: 0 0 0 10px;
+                font-size: 16px;
+               
+            }
+            .q{
+                height: 40px;
+            }
+            #n{
+                width: 50px;
+                padding: 0 0 0 3px;
+            }
+            #e{
+                 width: 45px;
+                padding: 0 0 0 3px;
+            }
+            #m{
+                 width: 55px;
+                padding: 0 0 0 3px;
+            }
+            #p{
+                 width: 70px;
+                padding: 0 0 0 3px;
+            }
+            #t{
+                display: flex;
+                flex-direction: row;
+               position: relative;
+                height: 50px;
+            }
+             #t input{
+                    position: absolute;
+                    left:-200px;
+                 top:4px;
+                
+                }
+            #t label{
+                 position: absolute;
+                    left:20px      
+            }
+            #btn{
+               
+                width: 100px;
+                background-color: transparent;
+            }
+            h3{
+                text-align: center;
+                margin: 0 0 0 -50px;
+            }
+            
+       </style>
+
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+         
+                    <form method="POST" action="/login" id="register" >  <br>
+                         <h3>REGISTER</h3><br>
+                       <label class="abc" for="name" id="n">Name*</label>
+            <input class="q"type="text" name="name" placeholder="Enter your name" required>
+                            <label for="mail" class="abc" id="e">Email*</label>
+            <input class="q"type="email" placeholder="Enter your Email" name="mail">
+                        <label for="mobile" class="abc" id="m">Mobile*</label>
+            <input class="q"type="tel" autocomplete="tel" required placeholder="Enter your mobile number" name="mobile">
+                        <label for="pass" class="abc" id="p">Password</label>
+            <input class="q" type="password" placeholder="Create password" name="pass">
+            <div id="t">
+                  <input type="checkbox" name="cbox" required >       
+                <label for="cbox" >i have read all the terms and conditions*</label>
+            
+                      
+                 </div>
+            <button type="submit" style="height: 30px; width: 50pxs;" id="btn"> Register</button>
+               
+        </form>
+            
+    </div>
+
+    </body>
+</html>
